@@ -13,3 +13,5 @@ Bash script to automate the installation of Apache2 web server and push the logs
 6. Branching and Tagging: 
      a. Two branches, the main and the Dev, are present in the repository
      b. Correct tags should be found in the Git repository
+7. Run a Cron Job: The script schedules a cron job that runs the same script automatically at an interval of 1 day as a root user. 
+8. Maintain a record of archives (.tar) in  Inventory.html: When the script is executed, it creates /var/www/html/inventory.html with the proper header and append detail of copied Tar file in the next line. 
