@@ -70,8 +70,8 @@ then
 fi
 
 
-#add cronjob 
+#add cronjob to run At 00:00 on every day-of-month.
 if [[ ! -f /etc/cron.d/automation ]];
 then
-    echo " * * * * * /root/Automation_Project/automation.sh" >> /etc/cron.d/automation
+    echo " 0 0 */1 * * /root/Automation_Project/automation.sh" >> /etc/cron.d/automation
 fi
